@@ -1,0 +1,52 @@
+<modification>
+    <id><![CDATA[<a style="text-decoration:none" href="http://www.codemarket.com.br"><b  style="color:#00a99d;margin-right: 8px;">Code Market - Completar URL Amigável</b> </a>]]></id>
+    <version><![CDATA[1]]></version>
+    <vqmver><![CDATA[2.4.1]]></vqmver>
+    <author>
+        <![CDATA[<b><a style="color:#00a99d;" href="http://www.codemarket.com.br">Felipo Antonoff Araújo - codemarket.com.br</a></b>]]>
+    </author>
+
+    <file path="admin/view/template/common/" name="header.tpl">
+		<operation info="Adicionando jquery.stringToSlug.min.js ao header.tpl">
+			<search position="after"><![CDATA[<script type="text/javascript" src="view/javascript/common.js"></script>]]></search>
+			<add><![CDATA[<script type="text/javascript" src="view/javascript/jquery/jquery.stringToSlug.min.js"></script>
+			]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/catalog/" name="product_form.tpl">
+		<operation>
+			<search position="before" index="1"><![CDATA[//--></script>]]></search>
+			<add><![CDATA[$('input[name="product_description[2][name]"]').stringToSlug({
+                setEvents: 'keyup keydown blur',
+                getPut: 'input[name="keyword"]',
+                space: '-'
+                });
+            ]]></add>
+		</operation>
+	</file>
+
+    <file path="admin/view/template/catalog/" name="category_form.tpl">
+		<operation>
+			<search position="before" index="1"><![CDATA[//--></script>]]></search>
+			<add><![CDATA[$('input[name="category_description[2][name]"]').stringToSlug({
+                setEvents: 'keyup keydown blur',
+                getPut: 'input[name="keyword"]',
+                space: '-'
+                });
+            ]]></add>
+		</operation>
+	</file>
+    
+    <file path="admin/view/template/catalog/" name="information_form.tpl">
+		<operation>
+			<search position="before" index="1"><![CDATA[//--></script>]]></search>
+			<add><![CDATA[$('input[name="information_description[2][title]"]').stringToSlug({
+                setEvents: 'keyup keydown blur',
+                getPut: 'input[name="keyword"]',
+                space: '-'
+                });
+            ]]></add>
+		</operation>
+	</file>
+</modification>
