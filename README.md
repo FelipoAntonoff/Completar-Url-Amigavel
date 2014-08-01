@@ -24,4 +24,4 @@
 ### Licença
 Proibido qualquer comercialização da mesma, use em seus Projetos, mas não cobre dos seus clientes por algo gratuito
 Mantido e revisado pela comunidade OpenCart Brasil e Code Market
-GNU General Public License version 3 (GPLv3)
+[GNU General Public License version 3 (GPLv3)](https://github.com/codemarketOficial/Felipo-Completar-Url-Amigavel/blob/master/LICENSE)
