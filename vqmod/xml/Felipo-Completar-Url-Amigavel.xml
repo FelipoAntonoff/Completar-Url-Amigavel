@@ -17,7 +17,7 @@
 	<file path="admin/view/template/catalog/" name="product_form.tpl">
 		<operation>
 			<search position="before" index="1"><![CDATA[//--></script>]]></search>
-			<add><![CDATA[$('input[name="product_description[2][name]"]').stringToSlug({
+			<add><![CDATA[$('input[name="product_description[1][name]"]').stringToSlug({
                 setEvents: 'keyup keydown blur',
                 getPut: 'input[name="keyword"]',
                 space: '-'
@@ -29,7 +29,7 @@
     <file path="admin/view/template/catalog/" name="category_form.tpl">
 		<operation>
 			<search position="before" index="1"><![CDATA[//--></script>]]></search>
-			<add><![CDATA[$('input[name="category_description[2][name]"]').stringToSlug({
+			<add><![CDATA[$('input[name="category_description[1][name]"]').stringToSlug({
                 setEvents: 'keyup keydown blur',
                 getPut: 'input[name="keyword"]',
                 space: '-'
@@ -41,7 +41,7 @@
     <file path="admin/view/template/catalog/" name="information_form.tpl">
 		<operation>
 			<search position="before" index="1"><![CDATA[//--></script>]]></search>
-			<add><![CDATA[$('input[name="information_description[2][title]"]').stringToSlug({
+			<add><![CDATA[$('input[name="information_description[1][title]"]').stringToSlug({
                 setEvents: 'keyup keydown blur',
                 getPut: 'input[name="keyword"]',
                 space: '-'

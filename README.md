@@ -6,7 +6,18 @@
 
  1. Completa a URL Amigável dos Produtos, Categorias e Páginas Informativas
  2. Feita em Javascript, completa em tempo real com base no Título
- 
+
+### Configuração
+1. Abra o xml Felipo-Completar-Url-Amigavel.xml
+2. Procure por:<br>
+* product_description[1][name]
+* category_description[1][name]
+* information_description[1][title]
+Troque o 1 pelo número do ID da linguagem principal do site.
+
+Para saber qual é o ID, clica em Editar na linguagem principal e na URL procure por language_id=1
+3. Salve o arquivo
+
 ### Instalação
 
  1. Enviei a pasta admin e vqmod para a raiz da sua loja
@@ -22,6 +33,7 @@
  4. Seja um desenvolvedor da Code Market - http://www.codemarket.com.br
 
 ### Licença
-Proibido qualquer comercialização da mesma, use em seus Projetos, mas não cobre dos seus clientes por algo gratuito
+Proibido qualquer comercialização da mesma, use em seus Projetos, mas não cobre dos seus clientes por algo gratuito.
+
 Mantido e revisado pela comunidade OpenCart Brasil e Code Market
 [GNU General Public License version 3 (GPLv3)](https://github.com/codemarketOficial/Felipo-Completar-Url-Amigavel/blob/master/LICENSE)
